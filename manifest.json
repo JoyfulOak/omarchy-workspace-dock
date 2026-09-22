@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.joyfuloak.omarchy-workspace-dock",
+  "name": "Workspace Dock",
+  "version": "2.0.0",
+  "author": "JoyfulOak",
+  "description": "Workspace-aware application dock for the Omarchy bar, combining workspace numbers, running windows, and pinned launchers.",
+  "kinds": ["bar-widget", "service"],
+  "entryPoints": {
+    "barWidget": "workspace-dock.qml",
+    "service": "Service.qml"
+  },
+  "barWidget": {
+    "displayName": "Workspace Dock",
+    "description": "Workspace numbers, running apps, and a pinnable launcher dock combined into one workspace-aware widget.",
+    "category": "Launchers",
+    "aliases": ["workspace-dock", "dock", "taskbar", "launcher"],
+    "allowMultiple": false,
+    "defaultSection": "left",
+    "defaults": {
+      "maxTitleLength": 18,
+      "previewDelay": 350
+    },
+    "schema": [
+      {
+        "key": "maxTitleLength",
+        "type": "number",
+        "label": "Max window title length",
+        "description": "Titles longer than this are truncated with an ellipsis wherever a chip's title is shown.",
+        "defaultValue": 18
+      },
+      {
+        "key": "previewDelay",
+        "type": "number",
+        "label": "Hover preview delay (ms)",
+        "description": "How long to hover a chip before its live preview thumbnail appears.",
+        "defaultValue": 350
+      }
+    ]
+  }
+}
