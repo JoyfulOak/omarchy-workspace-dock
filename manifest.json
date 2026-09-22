@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "io.github.joyfuloak.omarchy-workspace-dock",
   "name": "Workspace Dock",
-  "version": "2.0.0",
+  "version": "2026.09.1",
   "author": "JoyfulOak",
   "description": "Workspace-aware application dock for the Omarchy bar, combining workspace numbers, running windows, and pinned launchers.",
   "kinds": ["bar-widget", "service"],
